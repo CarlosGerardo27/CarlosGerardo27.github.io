@@ -49,8 +49,8 @@ nav{
             color: $color-king-blue;
             font-weight: 500;
             cursor: pointer;
-            transition: 400ms;
             :hover{
+                transition: 300ms;
                 color: $color-yellow;
             }
         }

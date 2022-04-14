@@ -35,9 +35,9 @@ nav .navbar__menu a {
   color: #080357;
   font-weight: 500;
   cursor: pointer;
-  transition: 400ms;
 }
 nav .navbar__menu a :hover {
+  transition: 300ms;
   color: #F4D35E;
 }
 nav .navbar__menu div {
