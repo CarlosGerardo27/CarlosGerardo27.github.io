@@ -20,19 +20,21 @@ $color-hover-black: rgba(4, 3, 18, 0.61);
 body{
     font-family: $main-font;
 }
-
+ 
 nav{
     background-color: $color-pale-white;
     display: flex;
-    padding: 20px;
     font-size: 18px;
+    padding: 20px;
+/*     position:fixed; 
+    width: 100%; */
     .nav__name{
-        width: 20%;
+        color: $color-teal;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        color: $color-teal;
         line-height: 20px;
+        width: 20%;
     }
     .position{
         color: $color-liberty-blue;
@@ -50,18 +52,79 @@ nav{
             font-weight: 500;
             cursor: pointer;
             :hover{
-                transition: 300ms;
                 color: $color-yellow;
+                transition: 300ms;
             }
         }
         div{
+            align-items: center;
             display: flex;
             justify-content: center;
-            align-items: center;
             span{
                 margin-left: 10px;
             }
         }
     }
 
+}
+
+#about{
+    background-color: $color-king-blue;
+    .hero{
+        background-image: url("../Assets/hero-bg.png");
+        background-size: cover;
+        height: 380px;
+        .hero__content{
+            background-color: $color-hover-black;
+            color: white;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            justify-content: space-around;
+            h1{
+                font-family: $main-font;
+                font-size: 42px;
+                line-height: 70px;
+                font-weight: 400;
+                .blue-rectangle{
+                    background-color: $color-liberty-blue;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                .red-rectangle{
+                    background-color: $color-paradise-pink;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+.hero__description{
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    h2{
+        color: $color-pale-white;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        line-height: 45px;
+    }
+    p{
+        font-size: 20px;
+        line-height: 30px;
+        color: $color-pale-white;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    .focus{
+        font-weight: 600;
+        span{
+            color: $color-yellow;
+        }
+    }
 }

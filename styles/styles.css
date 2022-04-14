@@ -8,16 +8,18 @@ body {
 nav {
   background-color: #FAFAF7;
   display: flex;
-  padding: 20px;
   font-size: 18px;
+  padding: 20px;
+  /*     position:fixed; 
+      width: 100%; */
 }
 nav .nav__name {
-  width: 20%;
+  color: #28AFB0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #28AFB0;
   line-height: 20px;
+  width: 20%;
 }
 nav .position {
   color: #5762D5;
@@ -37,16 +39,77 @@ nav .navbar__menu a {
   cursor: pointer;
 }
 nav .navbar__menu a :hover {
-  transition: 300ms;
   color: #F4D35E;
+  transition: 300ms;
 }
 nav .navbar__menu div {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 nav .navbar__menu div span {
   margin-left: 10px;
+}
+
+#about {
+  background-color: #080357;
+}
+#about .hero {
+  background-image: url("../Assets/hero-bg.png");
+  background-size: cover;
+  height: 380px;
+}
+#about .hero .hero__content {
+  background-color: rgba(4, 3, 18, 0.61);
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+}
+#about .hero .hero__content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  line-height: 70px;
+  font-weight: 400;
+}
+#about .hero .hero__content h1 .blue-rectangle {
+  background-color: #5762D5;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#about .hero .hero__content h1 .red-rectangle {
+  background-color: #EC4067;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.hero__description {
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.hero__description h2 {
+  color: #FAFAF7;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 45px;
+}
+.hero__description p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #FAFAF7;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.hero__description .focus {
+  font-weight: 600;
+}
+.hero__description .focus span {
+  color: #F4D35E;
 }
 
 /*# sourceMappingURL=styles.css.map */
