@@ -1,0 +1,52 @@
+/* Font */
+/* Colors  */
+/* Navbar */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  background-color: #FAFAF7;
+  display: flex;
+  padding: 20px;
+  font-size: 18px;
+}
+nav .nav__name {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #28AFB0;
+  line-height: 20px;
+}
+nav .position {
+  color: #5762D5;
+  line-height: 25px;
+  font-size: 15px;
+}
+nav .navbar__menu {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+nav .navbar__menu a {
+  color: #080357;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 400ms;
+}
+nav .navbar__menu a :hover {
+  color: #F4D35E;
+}
+nav .navbar__menu div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .navbar__menu div span {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

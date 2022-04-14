@@ -1,0 +1,67 @@
+/* Font */
+
+$main-font: 'Poppins', sans-serif;
+
+/* Colors  */
+
+$color-pale-white: #FAFAF7;
+$color-yellow: #F4D35E;
+$color-liberty-blue: #5762D5;
+$color-soft-black: #020402;
+$color-paradise-pink: #EC4067;
+$color-king-blue: #080357; 
+$color-teal: #28AFB0;
+$color-hover-black: rgba(4, 3, 18, 0.61);
+
+
+
+/* Navbar */
+
+body{
+    font-family: $main-font;
+}
+
+nav{
+    background-color: $color-pale-white;
+    display: flex;
+    padding: 20px;
+    font-size: 18px;
+    .nav__name{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $color-teal;
+        line-height: 20px;
+    }
+    .position{
+        color: $color-liberty-blue;
+        line-height: 25px;
+        font-size: 15px;
+    }
+    .navbar__menu{
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+        a{
+            color: $color-king-blue;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 400ms;
+            :hover{
+                color: $color-yellow;
+            }
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                margin-left: 10px;
+            }
+        }
+    }
+
+}
