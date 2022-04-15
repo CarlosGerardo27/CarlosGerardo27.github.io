@@ -65,7 +65,7 @@ nav .navbar__menu div span {
   height: 380px;
 }
 #about .hero .hero__content {
-  background-color: rgba(4, 3, 18, 0.61);
+  background-color: rgba(4, 3, 18, 0.71);
   color: white;
   display: flex;
   align-items: center;
@@ -115,6 +115,96 @@ nav .navbar__menu div span {
 }
 .hero__description .focus span {
   color: #F4D35E;
+}
+
+#projects {
+  background-color: #5762D5;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#projects h2 {
+  color: #FAFAF7;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+#projects .instructions {
+  align-self: flex-start;
+  margin-left: 170px;
+  color: #FAFAF7;
+  font-size: 20px;
+}
+#projects .project-line {
+  display: flex;
+  width: 85%;
+  margin: 30px 0;
+  justify-content: space-around;
+}
+#projects .project-line .project__card {
+  width: 538px;
+  height: 370px;
+  background-color: #FAFAF7;
+  padding: 15px;
+  border-radius: 7px;
+}
+#projects .project-line .project__card .card__image {
+  height: 271px;
+  position: relative;
+  cursor: pointer;
+}
+#projects .project-line .project__card .card__image .decription__background {
+  align-items: center;
+  background-color: rgba(4, 3, 18, 0.71);
+  color: #FAFAF7;
+  font-size: 18px;
+  line-height: 28px;
+  display: flex;
+  height: 271px;
+  justify-content: center;
+  padding: 0px 20px;
+  position: absolute;
+  top: 0px;
+}
+#projects .project-line .project__card .card__image .decription__background p {
+  margin-top: 0px;
+  font-weight: 400;
+}
+#projects .project-line .project__card h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #28AFB0;
+}
+#projects .project-line .project__card p {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+#projects .project-line .project__card .buttons {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 15px;
+  justify-content: space-around;
+}
+#projects .project-line .project__card .buttons .github {
+  padding: 5px;
+  text-align: center;
+  width: 120px;
+  border-radius: 5px;
+  color: #020402;
+  background-color: #F4D35E;
+}
+#projects .project-line .project__card .buttons .deployment {
+  padding: 5px;
+  text-align: center;
+  width: 120px;
+  border-radius: 5px;
+  color: #FAFAF7;
+  background-color: #28AFB0;
 }
 
 /*# sourceMappingURL=styles.css.map */

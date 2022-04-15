@@ -11,7 +11,7 @@ $color-soft-black: #020402;
 $color-paradise-pink: #EC4067;
 $color-king-blue: #080357; 
 $color-teal: #28AFB0;
-$color-hover-black: rgba(4, 3, 18, 0.61);
+$color-hover-black: rgba(4, 3, 18, 0.71);
 
 /* General classes */
 
@@ -130,5 +130,96 @@ nav{
         span{
             color: $color-yellow;
         }
+    }
+}
+
+#projects{
+    background-color: $color-liberty-blue;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+        color: $color-pale-white;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .instructions{
+        align-self: flex-start;
+        margin-left: 170px;
+        color: $color-pale-white;
+        font-size: 20px;
+    }
+    .project-line{
+        display: flex;
+        width: 85%;
+        margin: 30px 0;
+        justify-content: space-around;
+        .project__card{
+            width: 538px;
+            height: 370px;
+            background-color: $color-pale-white;
+            padding: 15px;
+            border-radius: 7px;
+            .card__image{
+                height: 271px;
+                position: relative;
+                cursor: pointer;
+                .decription__background{
+                    align-items: center;
+                    background-color: $color-hover-black;
+                    color: $color-pale-white;
+                    font-size: 18px;
+                    line-height: 28px;
+                    display: flex;
+                    height: 271px;
+                    justify-content: center;
+                    padding: 0px 20px;
+                    position: absolute;
+                    top: 0px;
+                    p{
+                        margin-top: 0px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            h3{
+                font-size: 20px;
+                margin-top: 10px;
+                font-weight: 600;
+                color: $color-teal;
+            }
+            p{
+                font-size: 18px;
+                margin-top: 10px;
+                font-weight: 500;
+            }
+            .buttons{
+                display: flex;
+                width: 60%;
+                margin: 0 auto;
+                margin-top: 15px;
+                justify-content: space-around;
+                .github{
+                    padding: 5px;
+                    text-align: center;
+                    width: 120px;
+                    border-radius: 5px;
+                    color: $color-soft-black;
+                    background-color: $color-yellow;
+                }
+                .deployment{
+                    padding: 5px;
+                    text-align: center;
+                    width: 120px;
+                    border-radius: 5px;
+                    color: $color-pale-white;
+                    background-color: $color-teal;
+                }
+            }
+        }
+
     }
 }
