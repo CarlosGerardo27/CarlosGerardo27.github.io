@@ -28,7 +28,7 @@ body{
 nav{
     background-color: $color-pale-white;
     display: flex;
-    font-size: 21px;
+    font-size: 21stylespx;
     padding: 20px;
 /*     position:fixed; 
     width: 100%; */
@@ -226,6 +226,22 @@ nav{
     }
 }
 
+.github:hover{
+    background-color: $color-king-blue!important;
+    color: $color-pale-white!important;
+    transition: .4s;
+}
+
+
+.deployment:hover{
+    background-color: $color-king-blue!important;
+    color: $color-pale-white!important;
+    transition: .4s;
+}
+
+
+
+
 #Skills{
     padding: 40px;
     h2{
@@ -253,6 +269,43 @@ nav{
             justify-content: space-around;
             align-items: center;
             margin: 20px 0px;
+        }
+    }
+}
+
+#Contact{
+    background-color: $color-soft-black;
+    padding: 40px 0;
+    h2{
+        color: $color-pale-white;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .information__container{
+        display: flex;
+        justify-content: space-around;
+        width: 85%;
+        margin: 0 auto;
+        div{
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+        }
+        img{
+            margin-right: 20px;
+        }
+        p{
+            color: $color-pale-white;
+            font-size: 24px;
+        }
+    }
+    .socialmedia{
+        width: 72%;
+        margin: 0 auto;
+        margin-top: 40px;
+        a{
+            margin-left: 30px;
         }
     }
 }

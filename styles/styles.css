@@ -13,7 +13,7 @@ body {
 nav {
   background-color: #FAFAF7;
   display: flex;
-  font-size: 21px;
+  font-size: 21stylespx;
   padding: 20px;
   /*     position:fixed; 
       width: 100%; */
@@ -209,6 +209,18 @@ nav .navbar__menu div span {
   background-color: #28AFB0;
 }
 
+.github:hover {
+  background-color: #080357 !important;
+  color: #FAFAF7 !important;
+  transition: 0.4s;
+}
+
+.deployment:hover {
+  background-color: #080357 !important;
+  color: #FAFAF7 !important;
+  transition: 0.4s;
+}
+
 #Skills {
   padding: 40px;
 }
@@ -238,6 +250,43 @@ nav .navbar__menu div span {
   justify-content: space-around;
   align-items: center;
   margin: 20px 0px;
+}
+
+#Contact {
+  background-color: #020402;
+  padding: 40px 0;
+}
+#Contact h2 {
+  color: #FAFAF7;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+#Contact .information__container {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  margin: 0 auto;
+}
+#Contact .information__container div {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+#Contact .information__container img {
+  margin-right: 20px;
+}
+#Contact .information__container p {
+  color: #FAFAF7;
+  font-size: 24px;
+}
+#Contact .socialmedia {
+  width: 72%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+#Contact .socialmedia a {
+  margin-left: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
