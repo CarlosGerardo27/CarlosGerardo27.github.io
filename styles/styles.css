@@ -60,7 +60,7 @@ nav .navbar__menu div span {
   background-color: #080357;
 }
 #about .hero {
-  background-image: url("../images/hero-bg.png");
+  background-image: url("/images/hero-bg.png");
   background-size: cover;
   height: 380px;
 }
