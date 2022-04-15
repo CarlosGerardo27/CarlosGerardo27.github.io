@@ -20,16 +20,18 @@ nav {
 }
 nav .nav__name {
   color: #28AFB0;
+  font-size: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 20px;
+  line-height: 30px;
   width: 20%;
 }
 nav .position {
   color: #5762D5;
   line-height: 25px;
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: 500;
 }
 nav .navbar__menu {
   display: flex;
