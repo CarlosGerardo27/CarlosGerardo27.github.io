@@ -32,6 +32,7 @@ nav{
     padding: 20px;
 /*     position:fixed; 
     width: 100%; */
+
     .nav__name{
         color: $color-teal;
         font-size: 25px;
@@ -47,6 +48,12 @@ nav{
         font-size: 18px;
         font-weight: 500;
     }
+    #menu_icon{
+        display: none;
+    }
+    #close_icon{
+        display: none;
+    }
     #menu__container{
         display: flex;
         align-items: center;
@@ -54,7 +61,7 @@ nav{
         justify-content: space-around;
         .navbar__menu{
             display: flex;
-            width: 70%;
+            width: 85%;
             align-items: center;
             justify-content: center;
             justify-content: space-around;
@@ -448,7 +455,25 @@ nav{
   }
 
   @media (max-width: 850px){
-      
+    nav{
+        #menu_icon{
+            display: block;
+        }
+        #menu__container{
+            display: none;
+            .navbar__menu{
+                flex-direction: column;
+                width: 150px;
+                align-items: flex-start;
+                a{
+                    margin-top: 20px;
+                }
+
+
+            }
+        }
+    }  
+
     #about{
         .hero{
             height: 500px;

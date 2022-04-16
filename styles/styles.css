@@ -33,6 +33,12 @@ nav .position {
   font-size: 18px;
   font-weight: 500;
 }
+nav #menu_icon {
+  display: none;
+}
+nav #close_icon {
+  display: none;
+}
 nav #menu__container {
   display: flex;
   align-items: center;
@@ -41,7 +47,7 @@ nav #menu__container {
 }
 nav #menu__container .navbar__menu {
   display: flex;
-  width: 70%;
+  width: 85%;
   align-items: center;
   justify-content: center;
   justify-content: space-around;
@@ -404,6 +410,21 @@ nav #menu__container .navbar__menu div span {
   }
 }
 @media (max-width: 850px) {
+  nav #menu_icon {
+    display: block;
+  }
+  nav #menu__container {
+    display: none;
+  }
+  nav #menu__container .navbar__menu {
+    flex-direction: column;
+    width: 150px;
+    align-items: flex-start;
+  }
+  nav #menu__container .navbar__menu a {
+    margin-top: 20px;
+  }
+
   #about .hero {
     height: 500px;
   }
