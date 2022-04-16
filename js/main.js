@@ -10,21 +10,22 @@ const menucontainer = document.getElementById('menu__container');
 const cardImage = document.getElementsByClassName('card__image');
 const descriptionbg = document.getElementsByClassName('decription__background');
 const navbar = document.getElementById('navbar');
-const navLinks = document.querySelectorAll('div.navbar__menu > a')
+const navLinks = document.querySelectorAll('div.navbar__menu > a');
 
-let sticky = navbar.offsetTop;
+const sticky = navbar.offsetTop;
 
 
 /* functions */
 
-
 const fixedNav = ()=>{
     if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
+        navbar.classList.add("sticky");
+
       } else {
         navbar.classList.remove("sticky");
       }
 }
+
 
 const toggleMenu = () =>{
     menu.addEventListener('click', ()=>{
