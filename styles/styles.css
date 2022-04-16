@@ -431,6 +431,31 @@ nav #menu__container .navbar__menu div span {
   #about .hero .hero__content h1 {
     font-size: 27px;
   }
+
+  #projects .instructions {
+    margin-left: 80px;
+  }
+}
+@media (max-width: 600px) {
+  #projects .project-line .project__card {
+    width: 350px;
+    height: auto;
+  }
+  #projects .project-line .project__card .card__image {
+    height: auto;
+  }
+  #projects .project-line .project__card .card__image img {
+    width: 350px;
+  }
+  #projects .project-line .project__card .card__image .decription__background {
+    height: 180px;
+  }
+  #projects .project-line .project__card .card__image .decription__background p {
+    font-size: 16px;
+  }
+  #projects .project-line .project__card .buttons {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

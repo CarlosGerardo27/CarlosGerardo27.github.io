@@ -484,4 +484,38 @@ nav{
             }
         }  
     } 
+
+    #projects{
+        .instructions{
+            margin-left: 80px;
+        }
+    }
+  }
+
+  @media (max-width: 600px){
+    #projects{
+            .project-line{
+    
+                .project__card{
+                    width: 350px;
+                    height: auto;
+                    .card__image{
+                        height: auto;
+                        img{
+                            width: 350px;
+                        }
+                        .decription__background{
+                            height: 180px;
+                            p{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .buttons{
+                        width: 100%;
+                    }
+                }
+            }
+        
+    }
   }

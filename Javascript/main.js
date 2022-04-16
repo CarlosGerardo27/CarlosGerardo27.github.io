@@ -24,13 +24,22 @@ const toggleMenu = () =>{
         closeMenu.style.display = 'none'
         menucontainer.style.display = 'none'
     })
+
+    window.addEventListener('resize', ()=>{
+        if(window.innerWidth > 850){
+            menucontainer.style.display = 'flex'
+        } else{
+            menucontainer.style.display = 'none'
+        }
+    })
 }
 
 
 window.addEventListener('resize', ()=>{
     if(window.innerWidth >850 ){
-        menu.style.display = 'none'
-        closeMenu.style.display = 'none'
+        menu.style.display = 'none';
+        closeMenu.style.display = 'none';
+
     }else{
         menu.style.display = 'block'
     }
