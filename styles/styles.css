@@ -1,10 +1,5 @@
 /* Font */
 /* Colors  */
-/* General classes  */
-.hide {
-  display: none;
-}
-
 /* Navbar */
 body {
   font-family: "Poppins", sans-serif;
@@ -178,7 +173,7 @@ nav #menu__container .navbar__menu div span {
   color: #FAFAF7;
   font-size: 18px;
   line-height: 28px;
-  display: flex;
+  display: none;
   height: 271px;
   justify-content: center;
   padding: 0px 20px;
@@ -541,6 +536,10 @@ nav #menu__container .navbar__menu div span {
   #projects .instructions {
     margin-left: 10px;
   }
+}
+/* General classes  */
+.hide {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

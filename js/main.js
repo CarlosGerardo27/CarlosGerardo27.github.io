@@ -7,7 +7,7 @@
 const menu = document.getElementById('menu_icon');
 const closeMenu = document.getElementById('close_icon')
 const menucontainer = document.getElementById('menu__container')
-const cardImage = document.getElementsByClassName('project__card')
+const cardImage = document.getElementsByClassName('card__image')
 const descriptionbg = document.getElementsByClassName('decription__background')
 
 
@@ -49,19 +49,18 @@ window.addEventListener('resize', ()=>{
 })
 
 
-/* for(let i = 0; i < cardImage.length; i++){
+
+
+for(let i= 0; i < cardImage.length; i++){
     cardImage[i].addEventListener('mouseover',()=>{
-        this.classList.toggle('hide')
-        let card = this.nextElementSibling;
-        if (card.classList.contains('hide')){
-            card.classList.remove('hide')
-        }else{
-            card.classList.add('hide')
-        }
-    })
-} */
-
-
+        let card = cardImage[i].firstChild.nextSibling;
+        card.style.display = 'flex'
+    });
+    cardImage[i].addEventListener('mouseout',()=>{
+        let card = cardImage[i].firstChild.nextSibling;
+        card.style.display = 'none'
+    });
+}
 
 toggleMenu()
 

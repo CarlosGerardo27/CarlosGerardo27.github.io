@@ -13,11 +13,6 @@ $color-king-blue: #080357;
 $color-teal: #28AFB0;
 $color-hover-black: rgba(4, 3, 18, 0.71);
 
-/* General classes  */
-
-.hide{
-    display: none;
-}
 
 /* Navbar */
 
@@ -191,7 +186,7 @@ nav{
                     color: $color-pale-white;
                     font-size: 18px;
                     line-height: 28px;
-                    display: flex;
+                    display: none;
                     height: 271px;
                     justify-content: center;
                     padding: 0px 20px;
@@ -629,3 +624,11 @@ nav{
         }
     }
 }
+
+/* General classes  */
+
+.hide{
+    display: none;
+}
+
+
