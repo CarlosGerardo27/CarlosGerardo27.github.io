@@ -1,5 +1,7 @@
 'use strict'
 
+
+
 /* DOM Elements */
 
 const menu = document.getElementById('menu_icon');
@@ -11,6 +13,7 @@ const descriptionbg = document.getElementsByClassName('decription__background')
 
 
 /* functions */
+
 
 
 const toggleMenu = () =>{
@@ -35,18 +38,18 @@ const toggleMenu = () =>{
     })
 }
 
-
 window.addEventListener('resize', ()=>{
     if(window.innerWidth >850 ){
         menu.style.display = 'none';
         closeMenu.style.display = 'none';
 
-    }else{
-        menu.style.display = 'block'
+    }else if(window.innerWidth <= 850) {
+        menu.style.display = 'block';
     }
 })
 
-for(let i = 0; i < cardImage.length; i++){
+
+/* for(let i = 0; i < cardImage.length; i++){
     cardImage[i].addEventListener('mouseover',()=>{
         this.classList.toggle('hide')
         let card = this.nextElementSibling;
@@ -56,6 +59,9 @@ for(let i = 0; i < cardImage.length; i++){
             card.classList.add('hide')
         }
     })
-}
+} */
+
+console.log("hola2")
 
 toggleMenu()
+
