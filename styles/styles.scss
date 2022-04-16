@@ -16,7 +16,7 @@ $color-hover-black: rgba(4, 3, 18, 0.71);
 /* General classes  */
 
 .hide{
-    display: none;
+    display: none!important;
 }
 
 /* Navbar */
@@ -136,7 +136,7 @@ nav{
     }
     p{
         font-size: 20px;
-        line-height: 30px;
+        line-height: 34px;
         color: $color-pale-white;
         margin-bottom: 20px;
         font-weight: 400;
@@ -483,6 +483,15 @@ nav{
                 }
             }
         }  
+        .hero__description{
+            h2{
+                font-size: 24px;
+            }
+            p{
+                font-size: 18px;
+                line-height: 34px;
+            }
+        }
     } 
 
     #projects{
@@ -493,6 +502,31 @@ nav{
   }
 
   @media (max-width: 600px){
+
+    .wrapper{
+        width: 100vw;
+    }
+
+    nav{
+        .nav__name{
+            width: 100%;
+        }
+    }
+
+    #about{
+        .hero{
+            height: 650px;
+            .hero__content{
+                h1{
+                    margin: 20px;
+                }
+                img{
+                    margin-top: 40px;
+                }
+            }
+        }  
+    } 
+
     #projects{
             .project-line{
     
@@ -518,4 +552,71 @@ nav{
             }
         
     }
+
+    #Skills{
+        h3{
+            margin-top: 30px;
+        }
+        .skills__container{
+            margin: 0 auto;
+            width: auto;
+            overflow: hidden;
+        }
+    }
+
+    #Contact{
+        .information__container{
+            margin: 0 auto;
+            width: 100%;
+            div{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                p{
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    width: auto;
+
+                }
+            }
+        }
+        .socialmedia{
+            width: 100%;
+        }
+    }
   }
+
+  @media (max-width: 450px){
+    #about{
+        .hero{
+            height: 450px;
+            .hero__content{
+                h1{
+                    line-height: 40px;
+                    font-size: 20px;
+                    margin: 20px;
+                }
+                img{
+                    margin-top: 40px;
+                }
+            }
+        }  
+        .hero__description{
+            h2{
+                font-size: 18px;
+                line-height: 30px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    } 
+
+    #projects{
+        .instructions{
+            margin-left: 10px;
+        }
+    }
+}

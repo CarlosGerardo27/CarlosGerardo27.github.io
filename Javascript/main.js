@@ -5,11 +5,12 @@
 const menu = document.getElementById('menu_icon');
 const closeMenu = document.getElementById('close_icon')
 const menucontainer = document.getElementById('menu__container')
+const cardImage = document.getElementsByClassName('project__card')
+const descriptionbg = document.getElementsByClassName('decription__background')
 
 
 
 /* functions */
-
 
 
 const toggleMenu = () =>{
@@ -44,5 +45,17 @@ window.addEventListener('resize', ()=>{
         menu.style.display = 'block'
     }
 })
+
+for(let i = 0; i < cardImage.length; i++){
+    cardImage[i].addEventListener('mouseover',()=>{
+        this.classList.toggle('hide')
+        let card = this.nextElementSibling;
+        if (card.classList.contains('hide')){
+            card.classList.remove('hide')
+        }else{
+            card.classList.add('hide')
+        }
+    })
+}
 
 toggleMenu()
