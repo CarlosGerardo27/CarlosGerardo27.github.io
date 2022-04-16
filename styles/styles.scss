@@ -47,28 +47,34 @@ nav{
         font-size: 18px;
         font-weight: 500;
     }
-    .navbar__menu{
+    #menu__container{
         display: flex;
-        width: 70%;
         align-items: center;
-        justify-content: center;
+        width: 92%;
         justify-content: space-around;
-        margin-left: 40px;
-        a{
-            color: $color-king-blue;
-            font-weight: 500;
-            cursor: pointer;
-            :hover{
-                color: $color-yellow;
-                transition: 300ms;
-            }
-        }
-        div{
-            align-items: center;
+        .navbar__menu{
             display: flex;
+            width: 70%;
+            align-items: center;
             justify-content: center;
-            span{
-                margin-left: 10px;
+            justify-content: space-around;
+            margin-left: 40px;
+            a{
+                color: $color-king-blue;
+                font-weight: 500;
+                cursor: pointer;
+                :hover{
+                    color: $color-yellow;
+                    transition: 300ms;
+                }
+            }
+            div{
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                span{
+                    margin-left: 10px;
+                }
             }
         }
     }
@@ -330,6 +336,13 @@ nav{
   /* Media queries */
 
   @media (max-width: 1370px) {
+    nav{
+        #menu__container{
+            .navbar__menu{
+                width: 100%;
+            }  
+        }
+    }  
     #projects{
         .project-line{
           width: 95%;
@@ -345,7 +358,7 @@ nav{
     }
   }
 
-  @media (max-width: 1212px) {
+  @media (max-width: 1212px) {  
     nav{
         flex-direction: column;
         align-items: center;
@@ -354,9 +367,10 @@ nav{
             text-align: center;
             margin-bottom: 10px;
         }
-        .navbar__menu{
-            width: 90%;
-            margin-left: 0;
+        #menu__container{
+            .navbar__menu{
+                margin-left: 0;
+            }
         }
     }
     #projects{
@@ -433,3 +447,16 @@ nav{
      }
   }
 
+  @media (max-width: 850px){
+      
+    #about{
+        .hero{
+            height: 500px;
+            .hero__content{
+                h1{
+                    font-size: 27px;
+                }
+            }
+        }  
+    } 
+  }

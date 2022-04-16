@@ -33,7 +33,13 @@ nav .position {
   font-size: 18px;
   font-weight: 500;
 }
-nav .navbar__menu {
+nav #menu__container {
+  display: flex;
+  align-items: center;
+  width: 92%;
+  justify-content: space-around;
+}
+nav #menu__container .navbar__menu {
   display: flex;
   width: 70%;
   align-items: center;
@@ -41,21 +47,21 @@ nav .navbar__menu {
   justify-content: space-around;
   margin-left: 40px;
 }
-nav .navbar__menu a {
+nav #menu__container .navbar__menu a {
   color: #080357;
   font-weight: 500;
   cursor: pointer;
 }
-nav .navbar__menu a :hover {
+nav #menu__container .navbar__menu a :hover {
   color: #F4D35E;
   transition: 300ms;
 }
-nav .navbar__menu div {
+nav #menu__container .navbar__menu div {
   align-items: center;
   display: flex;
   justify-content: center;
 }
-nav .navbar__menu div span {
+nav #menu__container .navbar__menu div span {
   margin-left: 10px;
 }
 
@@ -306,6 +312,10 @@ nav .navbar__menu div span {
 }
 /* Media queries */
 @media (max-width: 1370px) {
+  nav #menu__container .navbar__menu {
+    width: 100%;
+  }
+
   #projects .project-line {
     width: 95%;
   }
@@ -327,8 +337,7 @@ nav .navbar__menu div span {
     text-align: center;
     margin-bottom: 10px;
   }
-  nav .navbar__menu {
-    width: 90%;
+  nav #menu__container .navbar__menu {
     margin-left: 0;
   }
 
@@ -392,6 +401,14 @@ nav .navbar__menu div span {
   #Contact .socialmedia {
     display: flex;
     justify-content: center;
+  }
+}
+@media (max-width: 850px) {
+  #about .hero {
+    height: 500px;
+  }
+  #about .hero .hero__content h1 {
+    font-size: 27px;
   }
 }
 
