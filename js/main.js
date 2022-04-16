@@ -5,16 +5,26 @@
 /* DOM Elements */
 
 const menu = document.getElementById('menu_icon');
-const closeMenu = document.getElementById('close_icon')
-const menucontainer = document.getElementById('menu__container')
-const cardImage = document.getElementsByClassName('card__image')
-const descriptionbg = document.getElementsByClassName('decription__background')
+const closeMenu = document.getElementById('close_icon');
+const menucontainer = document.getElementById('menu__container');
+const cardImage = document.getElementsByClassName('card__image');
+const descriptionbg = document.getElementsByClassName('decription__background');
+const navbar = document.getElementById('navbar');
+const navLinks = document.querySelectorAll('div.navbar__menu > a')
 
+let sticky = navbar.offsetTop;
 
 
 /* functions */
 
 
+const fixedNav = ()=>{
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+}
 
 const toggleMenu = () =>{
     menu.addEventListener('click', ()=>{
@@ -48,10 +58,18 @@ window.addEventListener('resize', ()=>{
     }
 })
 
-
+for(let i = 0 ; i < navLinks.length ; i++){
+    navLinks[i].addEventListener('click',()=>[
+        closeMenu.click()
+    ])
+}
 
 
 for(let i= 0; i < cardImage.length; i++){
+    cardImage[i].addEventListener('click',()=>{
+        let card = cardImage[i].firstChild.nextSibling;
+        card.style.display = 'flex'
+    });
     cardImage[i].addEventListener('mouseover',()=>{
         let card = cardImage[i].firstChild.nextSibling;
         card.style.display = 'flex'
@@ -63,4 +81,5 @@ for(let i= 0; i < cardImage.length; i++){
 }
 
 toggleMenu()
+fixedNav()
 

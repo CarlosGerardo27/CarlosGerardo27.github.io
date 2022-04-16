@@ -3,6 +3,7 @@
 /* Navbar */
 body {
   font-family: "Poppins", sans-serif;
+  padding-top: 130px;
 }
 
 nav {
@@ -10,8 +11,6 @@ nav {
   display: flex;
   font-size: 21px;
   padding: 20px;
-  /*     position:fixed; 
-      width: 100%; */
 }
 nav .nav__name {
   color: #28AFB0;
@@ -540,6 +539,14 @@ nav #menu__container .navbar__menu div span {
 /* General classes  */
 .hide {
   display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  z-index: 11;
 }
 
 /*# sourceMappingURL=styles.css.map */
