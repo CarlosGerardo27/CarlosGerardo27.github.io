@@ -61,7 +61,7 @@ window.addEventListener('resize', ()=>{
     })
 } */
 
-console.log("hola2")
+
 
 toggleMenu()
 

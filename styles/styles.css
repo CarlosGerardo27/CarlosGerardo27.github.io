@@ -2,7 +2,7 @@
 /* Colors  */
 /* General classes  */
 .hide {
-  display: none !important;
+  display: none;
 }
 
 /* Navbar */
@@ -491,6 +491,10 @@ nav #menu__container .navbar__menu div span {
     overflow: hidden;
   }
 
+  #Contact h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
   #Contact .information__container {
     margin: 0 auto;
     width: 100%;
@@ -500,11 +504,14 @@ nav #menu__container .navbar__menu div span {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 300px;
+    margin: 0 auto;
   }
   #Contact .information__container div p {
     margin-top: 20px;
     margin-bottom: 30px;
     width: auto;
+    font-size: 14px;
   }
   #Contact .socialmedia {
     width: 100%;
