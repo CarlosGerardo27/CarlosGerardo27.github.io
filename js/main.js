@@ -14,6 +14,8 @@ const navLinks = document.querySelectorAll('div.navbar__menu > a');
 const projectCard = document.querySelectorAll('.project__card')
 const spanish = document.querySelectorAll('.esp')
 const english = document.querySelectorAll('.eng')
+const usaFlag = document.getElementById('unitedStates')
+const mexico = document.getElementById('mexico')
 
 const sticky = navbar.offsetTop;
 
@@ -86,6 +88,8 @@ for(let i= 0; i < cardImage.length; i++){
     });
 }
 
+
+
 const language = ()=>{
     for(let i = 0; i< spanish.length ; i++){
         spanish[i].classList.toggle('hide')
@@ -95,6 +99,17 @@ const language = ()=>{
         english[i].classList.toggle('hide')
     }
 }
+
+usaFlag.addEventListener('click',()=>{
+    language()
+})
+
+mexico.addEventListener('click',()=>{
+    language()
+})
+
+
+
 
  
 /* animation functions */
@@ -123,3 +138,4 @@ const animatedCard = ()=>{
 toggleMenu()
 fixedNav()
 animatedCard()
+

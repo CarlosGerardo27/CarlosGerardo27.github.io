@@ -17,6 +17,10 @@
   z-index: 11;
 }
 
+.language {
+  cursor: pointer;
+}
+
 /* Navbar */
 body {
   font-family: "Poppins", sans-serif;
@@ -321,12 +325,12 @@ nav #menu__container .navbar__menu div span {
 /* Animations */
 @keyframes showElement {
   from {
-    transform: translateY(-15%);
     opacity: 0.1;
+    transform: translateY(-15%);
   }
   to {
-    transform: translateY(0%);
     opacity: 1;
+    transform: translateY(0%);
   }
 }
 .showOnScroll {
@@ -427,6 +431,9 @@ nav #menu__container .navbar__menu div span {
   }
 }
 @media (max-width: 850px) {
+  nav .language {
+    margin-top: 15px;
+  }
   nav #menu_icon {
     display: block;
   }

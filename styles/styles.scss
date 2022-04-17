@@ -31,7 +31,9 @@ $color-hover-black: rgba(4, 3, 18, 0.71);
     z-index: 11;
   }
 
-
+.language{
+    cursor: pointer;
+}
 
 /* Navbar */
 
@@ -345,12 +347,12 @@ nav{
 
 @keyframes showElement {
     from {
-      transform: translateY(-15%);
       opacity: 0.1;
+      transform: translateY(-15%);
     }
     to {
-      transform: translateY(0%);
       opacity: 1;
+      transform: translateY(0%);
     }
   }
 
@@ -474,6 +476,9 @@ nav{
 
   @media (max-width: 850px){
     nav{
+        .language{
+            margin-top: 15px;
+        }
         #menu_icon{
             display: block;
         }
