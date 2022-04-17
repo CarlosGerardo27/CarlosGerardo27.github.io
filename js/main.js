@@ -56,14 +56,15 @@ window.addEventListener('resize', ()=>{
 
     }else if(window.innerWidth <= 850) {
         menu.style.display = 'block';
+        for(let i = 0 ; i < navLinks.length ; i++){
+            navLinks[i].addEventListener('click',()=>[
+                closeMenu.click()
+            ])
+        }
     }
 })
 
-for(let i = 0 ; i < navLinks.length ; i++){
-    navLinks[i].addEventListener('click',()=>[
-        closeMenu.click()
-    ])
-}
+
 
 
 for(let i= 0; i < cardImage.length; i++){
