@@ -12,6 +12,8 @@ const descriptionbg = document.getElementsByClassName('decription__background');
 const navbar = document.getElementById('navbar');
 const navLinks = document.querySelectorAll('div.navbar__menu > a');
 const projectCard = document.querySelectorAll('.project__card')
+const spanish = document.querySelectorAll('.esp')
+const english = document.querySelectorAll('.eng')
 
 const sticky = navbar.offsetTop;
 
@@ -84,9 +86,18 @@ for(let i= 0; i < cardImage.length; i++){
     });
 }
 
+const language = ()=>{
+    for(let i = 0; i< spanish.length ; i++){
+        spanish[i].classList.toggle('hide')
+    }
+
+    for(let i = 0; i< english.length ; i++){
+        english[i].classList.toggle('hide')
+    }
+}
+
+ 
 /* animation functions */
-
-
 
 
 
