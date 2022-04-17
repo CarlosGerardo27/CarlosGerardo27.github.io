@@ -482,6 +482,12 @@ nav{
     nav{
         .language{
             margin-top: 15px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .lang{
+            display: none;
         }
         #menu_icon{
             display: block;

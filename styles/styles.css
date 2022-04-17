@@ -437,6 +437,12 @@ nav #menu__container .navbar__menu div span {
 @media (max-width: 850px) {
   nav .language {
     margin-top: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  nav .lang {
+    display: none;
   }
   nav #menu_icon {
     display: block;

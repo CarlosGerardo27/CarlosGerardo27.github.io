@@ -43,7 +43,8 @@ const toggleMenu = () =>{
         menu.style.display = 'block'
         closeMenu.style.display = 'none'
         menucontainer.style.display = 'none'
-    })
+    }
+    )
 
     window.addEventListener('resize', ()=>{
         if(window.innerWidth > 850){
@@ -66,8 +67,15 @@ window.addEventListener('resize', ()=>{
                 closeMenu.click()
             ])
         }
+        usaFlag.addEventListener('click',()=>{
+            closeMenu.click()
+        })
+        mexico.addEventListener('click',()=>{
+            closeMenu.click()
+        })
     }
 })
+
 
 
 
