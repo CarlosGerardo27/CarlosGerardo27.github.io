@@ -16,6 +16,8 @@ const spanish = document.querySelectorAll('.esp')
 const english = document.querySelectorAll('.eng')
 const usaFlag = document.getElementById('unitedStates')
 const mexico = document.getElementById('mexico')
+const skillsContainer = document.querySelectorAll('.skills__container')
+const skillsImg = document.querySelectorAll('.skills__container >.line img')
 
 const sticky = navbar.offsetTop;
 
@@ -127,7 +129,7 @@ mexico.addEventListener('click',()=>{
 
 const animatedCard = ()=>{
     for(let i = 0; i < projectCard.length; i++){
-        let card = {}
+        let card = {};
         card = projectCard[i];
 
         const observer = new IntersectionObserver(entries =>{
@@ -136,7 +138,29 @@ const animatedCard = ()=>{
 
         observer.observe(card)
     }
+
+    for(let i = 0; i < skillsContainer.length; i++){
+        let skContainer = {};
+        skContainer = skillsContainer[i];
+
+        const observer = new IntersectionObserver(entries =>{
+            skContainer.classList.toggle('showOnScroll', entries[0].isIntersecting);
+        })
+        observer.observe(skContainer)
+    }
+
+    for(let i = 0; i < skillsImg.length; i++){
+        let skimage = {};
+        skimage = skillsImg[i];
+        const observer = new IntersectionObserver(entries =>{
+            skimage.classList.toggle('showOnScroll2', entries[0].isIntersecting);
+        })
+
+        observer.observe(skimage)
+
+    }
 }
+
 
 
 
