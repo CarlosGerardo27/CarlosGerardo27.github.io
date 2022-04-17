@@ -11,6 +11,7 @@ const cardImage = document.getElementsByClassName('card__image');
 const descriptionbg = document.getElementsByClassName('decription__background');
 const navbar = document.getElementById('navbar');
 const navLinks = document.querySelectorAll('div.navbar__menu > a');
+const projectCard = document.querySelectorAll('.project__card')
 
 const sticky = navbar.offsetTop;
 
@@ -71,6 +72,7 @@ for(let i= 0; i < cardImage.length; i++){
     cardImage[i].addEventListener('click',()=>{
         let card = cardImage[i].firstChild.nextSibling;
         card.style.display = 'flex'
+        card.style.display = 'flex'
     });
     cardImage[i].addEventListener('mouseover',()=>{
         let card = cardImage[i].firstChild.nextSibling;
@@ -82,6 +84,31 @@ for(let i= 0; i < cardImage.length; i++){
     });
 }
 
+/* animation functions */
+
+
+
+
+
+
+const animatedCard = ()=>{
+    for(let i = 0; i < projectCard.length; i++){
+        let card = {}
+        card = projectCard[i];
+
+        const observer = new IntersectionObserver(entries =>{
+            card.classList.toggle('showOnScroll', entries[0].isIntersecting);
+        })
+
+        observer.observe(card)
+    }
+}
+
+
+
+
+/* function calls */
+
 toggleMenu()
 fixedNav()
-
+animatedCard()

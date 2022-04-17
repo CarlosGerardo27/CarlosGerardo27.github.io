@@ -1,5 +1,22 @@
 /* Font */
 /* Colors  */
+/* General classes  */
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex !important;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  z-index: 11;
+}
+
 /* Navbar */
 body {
   font-family: "Poppins", sans-serif;
@@ -54,6 +71,7 @@ nav #menu__container .navbar__menu a {
 }
 nav #menu__container .navbar__menu a :hover {
   color: #F4D35E;
+  transform: scale(1.1);
   transition: 300ms;
 }
 nav #menu__container .navbar__menu div {
@@ -154,7 +172,6 @@ nav #menu__container .navbar__menu div span {
   justify-content: space-around;
 }
 #projects .project-line .project__card {
-  animation: showElement 1s linear;
   width: 538px;
   height: 370px;
   background-color: #FAFAF7;
@@ -304,12 +321,18 @@ nav #menu__container .navbar__menu div span {
 /* Animations */
 @keyframes showElement {
   from {
-    transform: translateY(-20%);
+    transform: translateY(-15%);
+    opacity: 0.1;
   }
   to {
     transform: translateY(0%);
+    opacity: 1;
   }
 }
+.showOnScroll {
+  animation: showElement 1.5s linear;
+}
+
 /* Media queries */
 @media (max-width: 1370px) {
   nav #menu__container .navbar__menu {
@@ -404,6 +427,10 @@ nav #menu__container .navbar__menu div span {
   }
 }
 @media (max-width: 850px) {
+  .sticky {
+    width: 92%;
+  }
+
   nav #menu_icon {
     display: block;
   }
@@ -535,18 +562,6 @@ nav #menu__container .navbar__menu div span {
   #projects .instructions {
     margin-left: 10px;
   }
-}
-/* General classes  */
-.hide {
-  display: none;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  opacity: 0.9;
-  z-index: 11;
 }
 
 /*# sourceMappingURL=styles.css.map */
