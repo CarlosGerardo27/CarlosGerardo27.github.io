@@ -427,10 +427,6 @@ nav #menu__container .navbar__menu div span {
   }
 }
 @media (max-width: 850px) {
-  .sticky {
-    width: 92%;
-  }
-
   nav #menu_icon {
     display: block;
   }
@@ -539,6 +535,10 @@ nav #menu__container .navbar__menu div span {
   }
 }
 @media (max-width: 450px) {
+  .sticky {
+    width: 92%;
+  }
+
   #about .hero {
     height: 450px;
   }
