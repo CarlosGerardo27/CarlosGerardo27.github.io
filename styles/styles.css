@@ -330,7 +330,7 @@ nav #menu__container .navbar__menu div span {
   }
 }
 .showOnScroll {
-  animation: showElement 1.5s linear;
+  animation: showElement 900ms linear;
 }
 
 /* Media queries */
